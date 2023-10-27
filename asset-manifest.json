@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/piug-proj/static/css/main.d592c384.css",
-    "main.js": "/piug-proj/static/js/main.5a3f4ce1.js",
-    "static/js/787.fb771931.chunk.js": "/piug-proj/static/js/787.fb771931.chunk.js",
+    "main.js": "/piug-proj/static/js/main.8be1a085.js",
+    "static/js/787.6416a0dd.chunk.js": "/piug-proj/static/js/787.6416a0dd.chunk.js",
     "static/media/color-sharp.png": "/piug-proj/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/piug-proj/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/ac1.jpeg": "/piug-proj/static/media/ac1.108f5297f7547184176d.jpeg",
@@ -25,11 +25,11 @@
     "static/media/nav-icon1.svg": "/piug-proj/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/piug-proj/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.d592c384.css.map": "/piug-proj/static/css/main.d592c384.css.map",
-    "main.5a3f4ce1.js.map": "/piug-proj/static/js/main.5a3f4ce1.js.map",
-    "787.fb771931.chunk.js.map": "/piug-proj/static/js/787.fb771931.chunk.js.map"
+    "main.8be1a085.js.map": "/piug-proj/static/js/main.8be1a085.js.map",
+    "787.6416a0dd.chunk.js.map": "/piug-proj/static/js/787.6416a0dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d592c384.css",
-    "static/js/main.5a3f4ce1.js"
+    "static/js/main.8be1a085.js"
   ]
 }
