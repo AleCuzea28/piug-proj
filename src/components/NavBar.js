@@ -121,6 +121,7 @@ export const NavBar = (props) => {
                       type="text"
                       placeholder="Search"
                       className="mr-sm-2 search-field"
+                      style={{ color: "aliceblue" }}
                       onChange={handleSearchInput}
                       value={props.searchBox}
                     />
