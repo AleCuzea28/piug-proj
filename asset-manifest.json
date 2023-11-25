@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/piug-proj/static/css/main.d592c384.css",
-    "main.js": "/piug-proj/static/js/main.8be1a085.js",
+    "main.css": "/piug-proj/static/css/main.85663f5b.css",
+    "main.js": "/piug-proj/static/js/main.9103e38c.js",
     "static/js/787.6416a0dd.chunk.js": "/piug-proj/static/js/787.6416a0dd.chunk.js",
     "static/media/color-sharp.png": "/piug-proj/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/piug-proj/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -24,12 +24,12 @@
     "index.html": "/piug-proj/index.html",
     "static/media/nav-icon1.svg": "/piug-proj/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/piug-proj/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.d592c384.css.map": "/piug-proj/static/css/main.d592c384.css.map",
-    "main.8be1a085.js.map": "/piug-proj/static/js/main.8be1a085.js.map",
+    "main.85663f5b.css.map": "/piug-proj/static/css/main.85663f5b.css.map",
+    "main.9103e38c.js.map": "/piug-proj/static/js/main.9103e38c.js.map",
     "787.6416a0dd.chunk.js.map": "/piug-proj/static/js/787.6416a0dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d592c384.css",
-    "static/js/main.8be1a085.js"
+    "static/css/main.85663f5b.css",
+    "static/js/main.9103e38c.js"
   ]
 }
