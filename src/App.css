@@ -242,13 +242,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+/* .search-container {
+  height: 40px;
+} */
+
 .search-field {
   background-color: transparent !important;
+  height: 42px;
+}
+
+.vvd {
+  height: 42px;
+  display: flex;
+  align-items: center !important;
+  border-radius: 5%;
 }
 
 .search-position {
   display: flex;
   justify-content: center;
+}
+
+.theme-button {
+  color: #fff;
+  border: 1px solid white;
+  height: 42px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /************ Banner Css ************/

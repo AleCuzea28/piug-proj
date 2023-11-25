@@ -7,12 +7,21 @@ import { Links } from "./components/Links";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import ScrollButton from "./components/ScrollButton";
+import { useState } from "react";
 
 function App() {
+  const [lightTheme, setTheme] = useState(false);
+  const [searchBox, setSearchBox] = useState("");
+
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
+      <NavBar
+        lightTheme={lightTheme}
+        setTheme={setTheme}
+        searchBox={searchBox}
+        setSearchBox={setSearchBox}
+      />
+      <Banner lightTheme={lightTheme} searchBox={searchBox} />
       <Links />
       <Presentation />
       <Contact />

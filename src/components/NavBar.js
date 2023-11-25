@@ -6,8 +6,10 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+// import Banner from "react-router-banner";
 
-export const NavBar = () => {
+export const NavBar = (props) => {
+  // const [lightTheme, setTheme] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,6 +31,21 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
+  function handleClick() {
+    props.setTheme(!props.lightTheme);
+  }
+
+  function handleSearchInput(event) {
+    props.setSearchBox(event.target.value);
+    console.log(event.target.value);
+  }
+
+  function handleSearchClick() {
+    console.log("search click");
+    const valueToSearch = props.searchBox;
+    console.log(valueToSearch);
+  }
+
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -40,6 +57,9 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
+            <button className="theme-button" onClick={handleClick}>
+              Light/Dark
+            </button>
             <Nav className="ms-auto">
               <Nav.Link
                 href="#home"
@@ -95,17 +115,19 @@ export const NavBar = () => {
                 </a>
               </div>
               <Form inline>
-                <Row>
+                <Row classname="search-container">
                   <Col xs="auto" className="search-position">
                     <Form.Control
                       type="text"
                       placeholder="Search"
                       className="mr-sm-2 search-field"
+                      onChange={handleSearchInput}
+                      value={props.searchBox}
                     />
                   </Col>
-                  <Col xs="auto">
-                    <HashLink to="#connect">
-                      <button className="vvd">
+                  <Col xs="auto" className="search-button">
+                    <HashLink to="#search">
+                      <button className="vvd" onClick={handleSearchClick}>
                         <span>Cauta</span>
                       </button>
                     </HashLink>

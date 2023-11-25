@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import Highlighter from "react-highlight-words";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import ac1 from "../assets/img/ac1.jpeg";
 import ac2 from "../assets/img/ac2.jpeg";
 import ac3 from "../assets/img/ac3.jpeg";
 
-export const Banner = () => {
-  const [lightTheme, setTheme] = useState(false);
+export const Banner = (props) => {
+  // const [lightTheme, setTheme] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -54,13 +55,13 @@ export const Banner = () => {
     }
   };
 
-  function handleClick() {
-    setTheme(!lightTheme);
-  }
+  // function handleClick() {
+  //   setTheme(!lightTheme);
+  // }
 
   return (
     <section
-      className={lightTheme === true ? "banner banner-light" : "banner"}
+      className={props.lightTheme === true ? "banner banner-light" : "banner"}
       id="home"
     >
       <Container>
@@ -85,18 +86,22 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Facultatea de Automatică și Calculatoare din Timișoara este
+                    <Highlighter
+                      highlightClassName="YourHighlightClass"
+                      searchWords={[props.searchBox]}
+                      textToHighlight="Facultatea de Automatică și Calculatoare din Timișoara este
                     una dintre cele mai noi facultăți ale Universității
                     Politehnica Timișoara. Ea oferă studenților formarea ca
                     inginer specialist în automatizări și calculatoare, cu
-                    diverse specializări.
+                    diverse specializări."
+                    />
                   </p>
                   <button onClick={() => console.log("help")}>
                     Help <ArrowRightCircle size={25} />
                   </button>
-                  <button onClick={handleClick}>
+                  {/* <button onClick={handleClick}>
                     Light/Dark <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>
